@@ -1,10 +1,10 @@
 <?php
 /*
- * Plugin Name: KaTeX
- * Plugin URI: https://wordpress.org/plugins/katex
+ * Plugin Name: KaTeX fork for Fux
+ * Plugin URI: https://github.com/neverything/katex
  * Description: Use the fastest math typesetting library on your website.
  * Version: 2.1.0
- * Author: Thomas Churchman
+ * Author: Thomas Churchman, Silvan Hagen
  * Author URI: https://churchman.nl
  * License: GPLv2 or later
  */
