@@ -1,0 +1,22 @@
+{
+  "name": "neverything/katex",
+  "type": "wordpress-plugin",
+  "description": "Renders LaTeX with the KaTeX lib.",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Silvan Hagen",
+      "email": "silvan@silvanhagen.com",
+      "homepage": "https://silvanhagen.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
