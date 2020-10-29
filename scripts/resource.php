@@ -76,9 +76,11 @@ function katex_enable() {
         ?>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-                const eles = document.querySelectorAll(".katex-eq");
+                console.log('Katex DOMContentLoaded');
+                const eles = document.querySelectorAll(".katex-eq:not(.ran)");
                 for(let idx=0; idx < eles.length; idx++) {
                     const ele = eles[idx];
+                    console.log(ele);
                     try {
                         katex.render(
                             ele.textContent,
@@ -88,6 +90,7 @@ function katex_enable() {
                                 throwOnError: false
                             }
                         );
+                        ele.classList.add('ran');
                     } catch(n) {
                         ele.style.color="red";
                         ele.textContent = n.message;
