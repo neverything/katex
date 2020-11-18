@@ -3,7 +3,7 @@ Contributors: Thomas Churchman, Silvan Hagen
 Tags: katex, latex, math, equation, tex, mathjax
 Requires at least: 5.0
 Tested up to: 5.5
-Stable tag: 2.1.0
+Stable tag: 2.1.1
 Requires PHP: 5.3
 License: GPLv2 or later
 
@@ -35,6 +35,9 @@ You should be able to replace any other LaTeX plugin using `[latex]` shortcodes 
 1. TeX is rendered inside your visitors' browsers.
 
 == Changelog ==
+= 2.1.1 =
+* Remove `<br>` tags added by WordPress to shortcode output.
+
 = 2.1.0 =
 * Prevent WordPress from texturizing KaTeX (prior to this change, WordPress would sometimes change e.g. apostrophes to quotation marks).
 * Fix issue where custom class names on the KaTeX block sometimes broke editor rendering.

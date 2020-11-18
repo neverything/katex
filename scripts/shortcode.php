@@ -47,6 +47,7 @@ function katex_display_inline_render($attributes, $content = null) {
     // Truthy -> 'true', falsy -> 'false'
     $display = $attributes['display'] ? 'true' : 'false';
 
+	$content = preg_replace("|<br\s*/?>|", "\n", $content);
     $encoded = htmlspecialchars(html_entity_decode($content));
     return sprintf('<span class="katex-eq" data-katex-display="%s">%s</span>', $display, $encoded);
 }
